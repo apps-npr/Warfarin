@@ -12,7 +12,7 @@ html,body{ height:100%; margin:0;
 gap:12px;padding:10px 16px;background:linear-gradient(180deg,#fff,#ffffffcc);
 backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid var(--border);}
 .appbar img{width:32px;height:32px;border-radius:8px;}
-.appbar h1{font-size:18px;margin:0;line-height:1.1;font-weight:700;}
+.appbar h1{font-size:20px;margin:0;line-height:1.1;font-weight:700;}
 .appbar small{color:var(--muted);} .actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
 .size-wrap{display:flex;gap:6px;}
 .container{max-width:980px;margin:24px auto;padding:0 12px;display:grid;gap:16px;}
@@ -28,7 +28,7 @@ backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid var(--border);}
 /* Sticker */
 .sticker{--w:8.5cm;--h:6.0cm;width:var(--w);height:var(--h);
 background:linear-gradient(135deg,#fff 0%,#fff 50%,#f5fbff 100%);
-border-radius:10px;padding:15px 10px 6px;color:#111827;position:relative;overflow:hidden;}
+border-radius:10px;padding:13px 10px 6px;color:#111827;position:relative;overflow:hidden;}
 .sticker.size-4_5{--h:4.5cm;font-size:18px;}
 .sticker.size-6_0{--h:6.0cm;font-size:20px;}
 .line{display:flex;gap:6px;margin:2px 0;align-items:flex-start;}
