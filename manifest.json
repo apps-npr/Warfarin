@@ -1,0 +1,6 @@
+{
+  "name": "Warfarin Sticker",
+  "short_name": "Sticker",
+  "start_url": ".",
+  "display": "standalone"
+}

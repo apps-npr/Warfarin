@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="th"><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Warfarin Sticker</title>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+</head><body>
+<header class="appbar">
+  <div class="brand"><img src="icon-192.png"><div><h1>Warfarin Sticker</h1>
+  <small>ใส่เลข Warfarin แล้วพิมพ์สติกเกอร์ได้ทันที</small></div></div>
+  <div class="actions"><div class="size-wrap">
+    <label class="chip"><input type="radio" name="size" value="4_5">8.5×4.5 ซม.</label>
+    <label class="chip"><input type="radio" name="size" value="6_0" checked>8.5×6.0 ซม.</label>
+  </div><button id="printBtn" class="btn primary">พิมพ์</button></div>
+</header>
+<main class="container">
+<section class="controls card"><div class="row">
+<label for="warfarinNo">Warfarin No</label>
+<input id="warfarinNo" type="text" inputmode="numeric" placeholder="เช่น 12345"/>
+<button id="fetchBtn" class="btn">ดึงข้อมูล</button>
+</div></section>
+<section class="preview card">
+<div id="sticker" class="sticker size-6_0 pastel">
+<div class="line"><span class="field-label">ชื่อ-สกุล:</span><span id="fullName" class="field-value" contenteditable="true">—</span></div>
+<div class="line"><span class="field-label">HN:</span><span id="hn" class="field-value" contenteditable="true">—</span></div>
+<div class="line"><span class="field-label">Warfarin No:</span><span id="wfno" class="field-value" contenteditable="true">—</span></div>
+<div class="line"><span class="field-label">Indication:</span><span id="indication" class="field-value" contenteditable="true">—</span></div>
+<div class="line"><span class="field-label">INR:</span><span id="inr" class="field-value" contenteditable="true">—</span></div>
+<div id="extraArea" class="extra" contenteditable="true" data-placeholder="เพิ่มข้อความเพิ่มเติมที่นี่…"></div>
+</div></section></main>
+<script>const ENDPOINT="https://script.google.com/macros/s/AKfycbyysw8GwWLmHk-erx6fLHbv0rVw6p93AHdxH8CEcYcSkTKiR31IH1yB0quQYuoKe7AtEQ/exec";</script>
+<script src="app.js"></script></body></html>
