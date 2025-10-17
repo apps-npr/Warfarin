@@ -29,8 +29,8 @@ backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid var(--border);}
 .sticker{--w:8.5cm;--h:6.0cm;width:var(--w);height:var(--h);
 background:linear-gradient(135deg,#fff 0%,#fff 50%,#f5fbff 100%);
 border-radius:10px;padding:18px 10px 6px;color:#111827;position:relative;overflow:hidden;}
-.sticker.size-4_5{--h:4.5cm;font-size:16px;}
-.sticker.size-6_0{--h:6.0cm;font-size:18px;}
+.sticker.size-4_5{--h:4.5cm;font-size:17px;}
+.sticker.size-6_0{--h:6.0cm;font-size:19px;}
 .line{display:flex;gap:6px;margin:2px 0;align-items:flex-start;}
 .field-label{min-width:110px;font-weight:700;color:#111;}
 .field-value{flex:1;min-height:18px;border-bottom:1px dotted #cbd5e1;outline:none;}
