@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="th"><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Warfarin Sticker</title>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#f7f8fc">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="167x167" href="apple-touch-icon-167x167.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+</head><body>
+<header class="appbar">
+  <div class="brand"><div><h1>Warfarin Sticker</h1>
+  <small>ใส่เลข Warfarin แล้วพิมพ์สติกเกอร์ได้ทันที</small></div></div>
+  <div class="actions"><div class="size-wrap">
+    <label class="chip"><input type="radio" name="size" value="4_5">8.5×4.5 ซม.</label>
+    <label class="chip"><input type="radio" name="size" value="6_0" checked>8.5×6.0 ซม.</label>
+  </div><button id="printBtn" class="btn primary">พิมพ์</button></div>
+</header>
+<main class="container">
+<section class="controls card">
+  <div class="row">
+    <label for="accessCode">รหัส</label>
+    <input id="accessCode" type="password" placeholder="ใส่รหัสก่อนดึงข้อมูล">
+    <label class="chip"><input id="rememberCode" type="checkbox">จำรหัสวันนี้</label>
+  </div>
+  <div class="row">
+    <label for="warfarinNo">Warfarin No</label>
+    <input id="warfarinNo" type="text" inputmode="numeric" placeholder="เช่น 12345"/>
+    <button id="fetchBtn" class="btn" disabled>ดึงข้อมูล</button>
+  </div>
+  <small id="gateMsg" class="hint">ใส่รหัสให้ถูกต้องก่อน จึงจะดึงข้อมูลได้</small>
+</section>
+
+<section class="preview card">
+  <div class="stickerRow">
+    <div id="sticker" class="sticker size-6_0 pastel">
+      <div class="line"><span class="field-label">ชื่อ-สกุล:</span><span id="fullName" class="field-value" contenteditable="true">—</span></div>
+      <div class="line"><span class="field-label">HN:</span><span id="hn" class="field-value" contenteditable="true">—</span></div>
+      <div class="line"><span class="field-label">Warfarin No:</span><span id="wfno" class="field-value" contenteditable="true">—</span></div>
+      <div class="line"><span class="field-label">Indication:</span><span id="indication" class="field-value" contenteditable="true">—</span></div>
+      <div class="line"><span class="field-label">INR:</span><span id="inr" class="field-value" contenteditable="true">—</span></div>
+      <div id="extraArea" class="extra" contenteditable="true" data-placeholder="เพิ่มข้อความเพิ่มเติมที่นี่…"></div>
+    </div>
+    <aside class="qs-panel">
+      <div class="title">Quick select</div>
+      <button id="btnInr23" class="btn small">INR 2–3</button>
+      <button id="btnInr2535" class="btn small">INR 2.5–3.5</button>
+      <button id="btnAll" class="btn small">ALL</button>
+    </aside>
+  </div>
+</section>
+</main>
+<script>const ENDPOINT="https://script.google.com/macros/s/AKfycbyysw8GwWLmHk-erx6fLHbv0rVw6p93AHdxH8CEcYcSkTKiR31IH1yB0quQYuoKe7AtEQ/exec"; const ACCESS_CODE="NPR";</script>
+<script src="app.js"></script></body></html>
